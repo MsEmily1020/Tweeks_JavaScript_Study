@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5003ee7f8f.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
+    <title>Data Unit Converter</title>
+</head>
+
+<body>
+    <h2>데이터 단위 변환기</h2>
+    <h4>변환하고 싶은 값을 입력하세요</h4>
+    <div class="card">
+        <form class="form">
+            <!-- 선택 항목 -->
+            <select name="input" id="input_selector">
+                <option value="bit">bit</option>
+                <option value="byte">byte</option>
+                <option value="kb">kb</option>
+                <option value="mb">mb</option>
+            </select>
+            <!-- 입력 필드 -->
+            <input type="text" placeholder="변환하려는 값" id="input_text">
+            <!-- 화살표 -->
+            <i class="fa-solid fa-arrow-down"></i>
+            <!-- 선택 항목 -->
+            <select name="output" id="output_selector">
+                <option value="bit">bit</option>
+                <option value="byte">byte</option>
+                <option value="kb">kb</option>
+                <option value="mb">mb</option>
+            </select>
+            <!-- 반환 필드 -->
+            <input type="text" placeholder="변환 값" id="output_text" readonly>
+        </form>
+    </div>
+</body>
+
+</html>
