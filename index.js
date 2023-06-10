@@ -7,27 +7,27 @@ const outputText = document.getElementById("output_text");
 // 전환 객체
 const conversions = {
   bit: {
-    byte: (value) => value / 8,
-    kb: (value) => value / (1024 * 8),
-    mb: (value) => value / (1024 * 1024 * 8),
+    byte: (bit) => bit / 8,
+    kb: (bit) => bit / (1024 * 8),
+    mb: (bit) => bit / (1024 * 1024 * 8),
   },
 
   byte: {
-    bit: (value) => value * 8,
-    kb: (value) => value / 1024,
-    mb: (value) => value / (1024 * 1024),
+    bit: (byte) => byte * 8,
+    kb: (byte) => byte / 1024,
+    mb: (byte) => byte / (1024 * 1024),
   },
 
   kb: {
-    bit: (value) => value * 8 * 1024,
-    byte: (value) => value * 1024,
-    mb: (value) => value / 1024,
+    bit: (kb) => kb * 8 * 1024,
+    byte: (kb) => kb * 1024,
+    mb: (kb) => kb / 1024,
   },
 
   mb: {
-    bit: (value) => value * 8 * 1024 * 1024,
-    byte: (value) => value * 1024 * 1024,
-    kb: (value) => value * 1024,
+    bit: (mb) => mb * 8 * 1024 * 1024,
+    byte: (mb) => mb * 1024 * 1024,
+    kb: (mb) => mb * 1024,
   },
 };
 
