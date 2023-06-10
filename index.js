@@ -30,3 +30,9 @@ const conversions = {
     kb: (value) => value * 1024,
   },
 };
+
+// 결과값 계산 후 리턴
+function convertToValue(inputType, inputText, outputType) {
+  const conversionFunction = conversions[inputType]?.[outputType];
+  return conversionFunction ? "${conversionFunction(value)}" : "Invalid input";
+}
